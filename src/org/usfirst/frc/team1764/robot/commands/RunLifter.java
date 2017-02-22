@@ -1,6 +1,5 @@
 package org.usfirst.frc.team1764.robot.commands;
 
-import org.usfirst.frc.team1764.robot.Constants;
 import org.usfirst.frc.team1764.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -10,13 +9,12 @@ import edu.wpi.first.wpilibj.command.Command;
  */
 public class RunLifter extends Command {
 
-	private boolean direction;
-	
-    public RunLifter(boolean direction) {
+	private double speed;
+    public RunLifter(double speed) {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     	requires(Robot.lifter);
-    	this.direction = direction;
+    	this.speed = speed;
     }
 
     // Called just before this Command runs the first time
@@ -25,7 +23,7 @@ public class RunLifter extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.lifter.set(Constants.LIFTER_SPEED * (direction ? 1:-1));
+    	Robot.lifter.set(speed);
     }
 
     // Make this return true when this Command no longer needs to run execute()

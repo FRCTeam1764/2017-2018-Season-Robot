@@ -1,6 +1,5 @@
 package org.usfirst.frc.team1764.robot.subsystems;
 
-import org.usfirst.frc.team1764.robot.Constants;
 import org.usfirst.frc.team1764.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.SpeedController;
@@ -20,7 +19,6 @@ public class Lifter extends Subsystem {
 	public Lifter()
 	{
 		this.lifterMotor = new Talon(RobotMap.PORT_LIFTER);
-		this.lifterMotor.setInverted(Constants.LIFTER_ISINVERTED);
 	}
 	
 	public void set(double speed)

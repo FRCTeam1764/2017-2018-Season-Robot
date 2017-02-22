@@ -5,13 +5,12 @@ public class Constants {
 	
 	//These are the controller axes for each drive axis.
 	
-	
 	public static int XBOX_DRIVE_TURNING = 0;
 	public static int XBOX_DRIVE_FWD = 2;
 	public static int XBOX_DRIVE_BACK = 3;
 		
 	//Should the pilot control everything?
-	public static boolean COPILOT_ENABLED = true;
+	public static boolean COPILOT_ENABLED = false;
 	
 	
 	//Button id for shift up and shift down buttons
@@ -49,13 +48,9 @@ public class Constants {
 	
 	//Speed for flywheel
 	//DO NOT CHANGE THESE VALUES -AUSTIN
-	public static double FLYWHEEL_SPEED = -75; //the maximum speed is 1.0...
-	public static double INTAKE_SPEED = .235;
+	public static double FLYWHEEL_SPEED = -.82;
+	public static double INTAKE_SPEED = .4;
 	
 	//Time for the flywheel-feeding system delay (the time it warms up the flywheel for)
 	public static double INTAKE_WARMUP = 1.5;
-	
-	//Lifter
-	public static double LIFTER_SPEED = 1.0;
-	public static boolean LIFTER_ISINVERTED = true;
 }

@@ -30,7 +30,7 @@ public class RunFeeder extends Command {
  
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        if (Math.floor(timer.get()*4) % 2 == 0)
+        if (Math.floor(timer.get()*7) % 2 == 0)
         {
             Robot.feeder.set(0);
         }
